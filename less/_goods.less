@@ -1,20 +1,8 @@
 .goods {
+  width: 100%;
   text-align: center;
-
-  &__fon {
-    display: flex;
-    flex-flow: column wrap;
-    justify-content: center;
-    align-items: center;
-    width: 320px;
-    min-height: 111px;
-    background-color: #029044;
-    background-image: url(../img/goods_fon.png);
-    background-size: contain;
-    background-repeat: no-repeat;
-    background-position: center;
-    color: #ff0000;
-  }
+  background: #FFFFFF;
+  box-shadow: 0 0 20px rgba(0, 0, 0, 0.25);
 
   &__title {
     margin: 20px 0 0 0;
@@ -30,19 +18,11 @@
     line-height: 28px;
   }
 
-  &__img {
-    display: block;
-    height: 163px;
-    width: 320px;
-  }
-
   &__wrap {
-    position: relative;
     display: grid;
     grid-template-columns: 1fr 100px;
     align-items: center;
     width: 320px;
-    // height: 44px;
     background-color: #f98000;
 
     &::after {
@@ -51,7 +31,7 @@
       width: 56px;
       height: 36px;
       background-color: transparent;
-      background-image: url(../img/delivery.png);
+      background-image: url(../img/delivery2.png);
       background-size: cover;
       background-repeat: no-repeat;
       background-position: center;

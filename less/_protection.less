@@ -1,0 +1,49 @@
+.protection {
+  position: relative;
+  width: 100%;
+  min-height: 278px;
+  background-color: #0c93a4;
+  color: #ffffff;
+
+  &::after {
+    content: "";
+    width: 211px;
+    height: 220px;
+    display: block;
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    background-image: url(../img/protection_fon.png);
+    background-size: 100%;
+    background-repeat: no-repeat;
+    background-position: 0 0;
+  }
+
+  &::before {
+    content: "";
+    width: 131px;
+    height: 170px;
+    display: block;
+    position: absolute;
+    top: 69px;
+    left: 28px;
+    background-image: url(../img/protection.svg),
+      url(../img/protection2.svg),
+      url(../img/protection3.svg);
+    background-size: 131px 131px, 28px 28px, 72px 55px;
+    background-repeat: no-repeat;
+    background-position: 0 0, 50px 14px, 30px 114px;
+  }
+
+  &__text {
+    max-width: 86px;
+    padding: 50px 0 0 50px;
+    margin: 0;
+  }
+
+  &__title {
+    margin: 16px 0 13px 0;
+    font-weight: 700;
+    text-transform: uppercase;
+  }
+}
