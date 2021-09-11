@@ -14,6 +14,116 @@
   }
 
   &__subtitle {
-    margin: 0 0 35px 0;
+    margin: 0 0 30px 0;
+    font-size: 14px;
+    font-style: normal;
+    font-weight: 700;
+    line-height: 16px;
+    text-transform: uppercase;
+  }
+
+  &__list {
+    display: flex;
+    flex-flow: column wrap;
+    row-gap: 22px;
+    list-style: none;
+    padding: 0;
+    margin: 16px 16px 34px 16px;
+  }
+
+  &__item {
+    position: relative;
+    max-width: 177px;
+    text-align: left;
+
+    // нечетные
+    &:nth-child(odd) {
+      align-self: flex-end;
+
+      &::before {
+        content: "";
+        display: block;
+        position: absolute;
+        top: 0;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    // четные
+    &:nth-child(even) {
+      align-self: flex-start;
+
+      &::after {
+        content: "";
+        position: absolute;
+        top: 0;
+        left: 189px;
+        display: block;
+        background-size: cover;
+        background-repeat: no-repeat;
+        background-position: center;
+      }
+    }
+
+    &--elasticity {
+      &::before {
+        width: 96px;
+        height: 96px;
+        right: 192px;
+        background-image: url(../img/elasticity.svg);
+      }
+    }
+
+    &--design {
+      &::after {
+        width: 96px;
+        height: 96px;
+        background-image: url(../img/design.svg);
+      }
+    }
+
+    &--material {
+      &::before {
+        width: 95px;
+        height: 96px;
+        right: 192px;
+        background-image: url(../img/material.svg);
+      }
+    }
+
+    &--texture {
+      margin: 0 0 16px 0;
+
+      &::after {
+        width: 102px;
+        height: 96px;
+        background-image: url(../img/texture.svg);
+      }
+    }
+
+    &--structure {
+      margin: 0 0 12px 0;
+
+      &::before {
+        width: 116px;
+        height: 107px;
+        right: 177px;
+        background-image: url(../img/structure.svg);
+      }
+    }
+
+    &--effect {
+      &::after {
+        width: 96px;
+        height: 96px;
+        background-image: url(../img/effect.svg);
+      }
+    }
+  }
+
+  &__dest {
+    font-weight: 700;
   }
 }
