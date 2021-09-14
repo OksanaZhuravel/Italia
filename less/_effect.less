@@ -1,0 +1,36 @@
+.effect {
+  width: 100%;
+  display: grid;
+  justify-items: center;
+  background-color: #ffffff;
+  text-align: center;
+
+  &__text {
+    width: 100%;
+    display: grid;
+    grid-template-columns: 72px 202px;
+    align-items: center;
+    margin: 20px 0 14px 0;
+    text-align: left;
+    color: #000000;
+
+    &::before {
+      content: "";
+      width: 48px;
+      height: 48px;
+      margin: 0 0 0 25px;
+      background-image: url(../img/action.svg);
+      background-size: cover;
+      background-repeat: no-repeat;
+      background-position: center;
+    }
+
+    &--defense {
+      margin: 20px 0 5px 0;
+
+      &::before {
+        margin: 0 0 0 15px;
+      }
+    }
+  }
+}

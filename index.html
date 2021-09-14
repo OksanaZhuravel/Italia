@@ -15,7 +15,7 @@
     <main class="main">
       <section class="goods">
         <div class="fon">
-          <h1 class="goods__title">Maschera</h1>
+          <h1 class="goods__title title">Maschera</h1>
           <span class="goods__subtitle">protettiva ipoallergenica</span>
         </div>
         <img class="img" src="img/maschera_protettiva.jpg" width="320" height="163"
@@ -38,17 +38,19 @@
         </form>
       </section>
       <section class="action">
-        <h2 class="action__title">"Promozione: se ordini 5 o più maschere la consegna è gratuita! *</h2>
+        <h2 class="action__title title">"Promozione: se ordini 5 o più maschere la consegna è gratuita! *</h2>
         <div class="action__counter counter">
           <span class="counter__text">Più di</span>
           <span class="counter__count">17.840</span>
           <span class="counter__text">pezzi venduti nell'ultima settimana"</span>
         </div>
         <div class="protection">
-          <p class="protection__title">Non lasciate che l'infezione penetri all'interno!</p>
+          <h3 class="protection__title title">Non lasciate che l'infezione penetri all'interno!</h3>
           <p class="protection__text">Misura universale per adulti e bambini</p>
         </div>
-        <p class="action__text">Triplo effetto di filtraggio con un grado di protezione del 99,9%</p>
+        <div class="effect">
+          <p class="effect__text">Triplo effetto di filtraggio con un grado di protezione del 99,9%</p>
+        </div>
         <div class="pagination">
           <a href="#" class="pagination__link pagination__link--activ"></a>
           <a href="#" class="pagination__link"></a>
@@ -56,7 +58,7 @@
           <a href="#" class="pagination__link"></a>
         </div>
         <div class="attention action__attention">
-          <span class="attention__title">Attenzione:</span>
+          <span class="attention__title title">Attenzione:</span>
           <span class="attention__subtitle">non stai rischiando nulla!</span>
           <div class="attention__wrap">
             <p class="attention__text">Tutti i nostri prodotti sono conformi ai principali standard di qualità europea e
@@ -70,7 +72,7 @@
       </section>
       <section class="advantage">
         <div class="fon fon--advantage">
-          <h2 class="advantage__title">Vantaggi della maschera protettiva</h2>
+          <h2 class="advantage__title title">Vantaggi della maschera protettiva</h2>
           <span class="advantage__subtitle"> ipoallergenica</span>
         </div>
         <img class="img" src="img/advantage.jpg" width="320" height="163"
@@ -99,7 +101,7 @@
         </ul>
       </section>
       <section class="attention">
-        <h2 class="attention__title">Maschera protettiva ipoallergenica</h2>
+        <h2 class="attention__title title">Maschera protettiva ipoallergenica</h2>
         <span class="attention__subtitle attention__subtitle--mask"> - una precauzione necessaria e una protezione
           affidabile della salute per ogni persona!</span>
         <div class="attention__wrap attention__wrap--mask">
@@ -114,7 +116,7 @@
       </section>
       <section class="instruction">
         <div class="fon fon--instruction">
-          <h2 class="instruction__title">Segui attentamente le istruzioni</h2>
+          <h2 class="instruction__title title">Segui attentamente le istruzioni</h2>
         </div>
         <div class="attention__wrap attention__wrap--instruction">
           <p class="attention__text">Lavarsi accuratamente le mani prima di indossare la maschera.</p>
@@ -126,7 +128,7 @@
       </section>
       <section class="goods">
         <div class="fon">
-          <h1 class="goods__title">Maschera</h1>
+          <h2 class="goods__title title">Maschera</h2>
           <span class="goods__subtitle">protettiva ipoallergenica</span>
         </div>
         <img class="img" src="img/maschera_protettiva_two.jpg" width="320" height="163"
@@ -135,11 +137,11 @@
           <span class="goods__text">Prodotto in <span class="goods__text--desc">Italia</span> - Garantiamo la
             consegna veloce!</span></div>
         <p class="goods__caption">Protezione affidabile contro virus e batteri per tutta la famiglia!</p>
-        <form action="#" class="form" method="post">
-          <label for="login__name" class="form__style visually-hidden">Nome</label>
-          <input class="form__style" type="text" name="name" id="login__name" placeholder="Valerio Rossi" />
-          <label for="login__tel" class="form__style visually-hidden">Numero di telefono</label>
-          <input class="form__style" type="number" name="tel" id="login__tel" placeholder="393295885750" />
+        <form action="#" class="form form--location" method="post">
+          <label for="login" class="form__style visually-hidden">Nome</label>
+          <input class="form__style" type="text" name="name" id="login" placeholder="Valerio Rossi" />
+          <label for="tel" class="form__style visually-hidden">Numero di telefono</label>
+          <input class="form__style" type="number" name="tel" id="tel" placeholder="393295885750" />
           <div class="form__inner counter">
             <span class="counter__text">Disponibili:</span>
             <span class="counter__count"> 17 </span>
@@ -147,30 +149,33 @@
           </div>
           <button class="button" type="submit" value="Ordinare">Ordinare</button>
         </form>
-        <!-- <div class="action">
-          <h2 class="action__title">"Promozione: se ordini 5 o più maschere la consegna è gratuita! *</h2>
+        <div class="action">
+          <h2 class="action__title title">"Promozione: se ordini 5 o più maschere la consegna è gratuita! *</h2>
           <div class="action__counter counter">
             <span class="counter__text">Più di</span>
             <span class="counter__count">17.840</span>
             <span class="counter__text">pezzi venduti nell'ultima settimana"</span>
           </div>
-        </div> -->
+        </div>
       </section>
-      <!-- <section class="protection">
-        <div class="">
-          <p class=" protection__title">Non lasciate che l'infezione penetri all'interno!</p>
+      <section class="defense">
+        <div class="protection">
+          <h3 class=" protection__title title">Non lasciate che l'infezione penetri all'interno!</h3>
           <p class="protection__text">Misura universale per adulti e bambini</p>
         </div>
-        <p class="protection__text--action action__text">Triplo effetto di filtraggio con un grado di protezione del
-          99,9%</p>
+        <div class="effect">
+          <p class="effect__text effect__text--defense">Triplo effetto di filtraggio con un grado di protezione del
+            99,9%</p>
+        </div>
         <div class="pagination">
           <a href="#" class="pagination__link pagination__link--activ"></a>
           <a href="#" class="pagination__link"></a>
           <a href="#" class="pagination__link"></a>
           <a href="#" class="pagination__link"></a>
         </div>
-      </section> -->
+      </section>
     </main>
+    <footer class="footer"></footer>
   </body>
 
 </html>
